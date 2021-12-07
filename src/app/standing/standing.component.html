@@ -7,17 +7,17 @@
             <th>Games</th>
             <th>Points</th>
             <th>Goals For</th>
-            <th>Goal Against</th>
+            <th>Goals Against</th>
 
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let currentRow of Standings">
-            <td>{currentRow.TeamName}}</td>
+            <td>{{currentRow.TeamName}}</td>
             <td>{{currentRow.GamesPlayed}}</td>
             <td>{{currentRow.Wins*3 + currentRow.Ties}}</td>
-            <td>{{currentRow,GoalsFor}}</td>
-            <td>{{currentRow.GoalsAgainsts}}</td>
+            <td>{{currentRow.GoalsFor}}</td>
+            <td>{{currentRow.GoalAgainsts}}</td>
         </tr>
     </tbody>
 </table>

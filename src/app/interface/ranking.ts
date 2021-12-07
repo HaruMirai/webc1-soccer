@@ -2,7 +2,7 @@ import { NumberLiteralType } from "typescript";
 
 export interface Ranking{
     TeamName: String;
-    GamesPlayed: NumberLiteralType;
+    GamesPlayed: number;
     Wins: number;
     Ties:number;
     GoalsFor: number;
